@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+  }
+
+.logo{
+  background-image: url(../logos/football-player-sticker-sport-fc-sens-football-logo-design-template-download-537e518c127267fb6719fdbb5d808ec0.png);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+
+
+table{
+   border:1px solid black;
+  
+   border-collapse: collapse;
+    
+}
