@@ -3,16 +3,113 @@ body {
   }
 
 .logo{
-  background-image: url(../logos/football-player-sticker-sport-fc-sens-football-logo-design-template-download-537e518c127267fb6719fdbb5d808ec0.png);
+  background-image: url(../logos/football-player-sticker-sport-fc-sens-football-logo-design-template-download-537e518c127267fb6719fdbb5d808ec0.webp);
   width: 100px;
   height: 100px;
   background-size: cover;
 }
 
 
-table{
+.match_table{
    border:1px solid black;
-  
    border-collapse: collapse;
     
+}
+/* tr{
+  height: 20px;
+  width: 200px;
+  background-size: contain;
+} */
+
+td{
+  height: 20px;
+  width: 200px;
+  background-size: contain;
+}
+td img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* crop and fill the box */
+  display: block;
+  margin: 0 auto;
+}
+
+.team_name{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.big_info{
+  text-align: center;
+  font-size:30px;
+  font-weight: bold;
+  color: black
+}
+.small_info{
+  text-align: center;
+  font-size:20px;
+  color: black
+}
+
+.news{
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.news_item{
+  padding: 10px;
+  display: block;
+  border-top: 1px solid gray;
+  
+
+
+}
+
+.news_item img{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  padding-right: 20px;
+}
+
+.news_item_table{
+ margin: 0%;
+}
+.text_area{
+  width: 100%;
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+.news_table{
+ 
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.news_table td{
+  height: auto;
+  width: 100%;
+  margin: 0%;
+  vertical-align: top;
+  padding: 0%;
+  overflow: hidden;
+  
+}
+
+.news_title{
+  margin: 0;
+padding: 0;
+
+
+}
+
+.news_content{
+ 
+  align-items: top;
+  margin: 0%;
+  
 }
