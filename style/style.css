@@ -1,18 +1,208 @@
 body {
     background-color: lightblue;
+    padding-top: 70px;
+    margin: 0%;
+    width: 100%;
+    
   }
+  
 
 .logo{
   background-image: url(../logos/football-player-sticker-sport-fc-sens-football-logo-design-template-download-537e518c127267fb6719fdbb5d808ec0.webp);
   width: 100px;
   height: 100px;
+  position: absolute;
   background-size: cover;
+  left: 20px
+  
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: gray;
+    
+}
+
+.menu{
+  margin:0;
+  padding: 0;
+}
+
+@media (min-width:769px){ /* for desktop only */
+  .search_bar{
+    position: absolute;
+    right: 50px;
+  }
+  .menu_bar{
+    display: flex;
+    align-items: center;
+    
+    width: 50%;
+    justify-content: center;
+    
+  }
+  .menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu ul{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+  .menu li{
+    display: flex;
+    height: 100%;
+    
+    margin: 0px;
+    align-items: center;
+   
+    
+    
+
+  }
+  .menu li:hover{
+    background-color: whitesmoke ;
+    color: black;
+    
+  }
+  .menu li a{
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .menu li:hover a {
+    color: black; /* change the text color when hovering over the li */
+  }
+  
+  
+  
+  
+
+}
+.hamburger{
+  display: none;
+}
+.menu ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  list-style: none;
+ 
 }
 
 
+.menu li a{
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+
+ 
+ 
+}
+
+@media (max-width: 768px){ /*for mobile */
+  body{
+    padding: 70px 2% 2% 2%; 
+  }
+  .header.expanded{
+    height: auto;
+  }
+  .menu_bar{
+    display: none;
+    flex-direction: column;
+  }
+  .logo{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 10px;
+    top: 0px
+  }
+  
+  
+  .hamburger{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
+  .menu_bar.show{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 40px;
+  }
+  .menu_bar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0px;
+  }
+  .menu_bar li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: right;
+  }
+  .search_bar{
+    margin-top:5px ;
+    margin-bottom: 5px;
+    width: 90%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search_bar input{
+    width: 60%;
+  }
+
+  
+}
+
+
+.table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 .match_table{
    border:1px solid black;
    border-collapse: collapse;
+   margin: 0 auto;
     
 }
 /* tr{
