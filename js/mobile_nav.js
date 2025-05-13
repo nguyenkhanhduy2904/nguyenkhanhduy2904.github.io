@@ -12,3 +12,7 @@ hamburger.addEventListener('click', () => {
   header.classList.toggle('expanded'); // Toggle the header class for styling
   updateBodyTopPadding(); // Update the body's top padding when the menu is toggled
 });
+
+
+
+
